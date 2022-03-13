@@ -1,0 +1,35 @@
+.button-home {
+  border: 1px solid black;
+}
+
+.btn-right {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-right:hover {
+  color: gray;
+}
+
+.btn-left {
+  position: absolute;
+  top: 50%;
+  right: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-left:hover {
+  color: gray;
+}

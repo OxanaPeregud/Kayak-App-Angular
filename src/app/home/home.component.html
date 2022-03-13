@@ -1,0 +1,25 @@
+<div class="container"
+     fxLayout="column">
+
+  <div fxFlex>
+    <div>
+      <h2 class="center">{{'home.services' | translate}}</h2>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex *ngIf="raftingList">
+    <mat-grid-list cols="2" rowHeight="3:2">
+      <mat-grid-tile *ngFor="let rafting of raftingList" [routerLink]="['/rafting-info', rafting.id]" appHighlight>
+        <img class="image" src="{{rafting.mainImagePath}}" alt={{rafting.name}}>
+        <mat-grid-tile-header>
+          <h1>{{rafting.name | translate | uppercase}}</h1>
+        </mat-grid-tile-header>
+        <mat-grid-tile-footer>
+          <h1>{{rafting.price | translate}}</h1>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+</div>

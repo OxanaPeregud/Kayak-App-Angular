@@ -1,0 +1,33 @@
+{
+  "morningRafting": "Weekend morning tours",
+  "eveningRafting": "Weekend evening tours",
+  "fullDay": "Full day tours",
+  "individual": "Individual tours",
+  "halfDayDuration": "3-4 hours",
+  "fullDayDuration": "7-8 hours",
+  "groupSize10": "from 10 people",
+  "groupSize5": "up to 5 people",
+  "price60": "60 rub. per person",
+  "price120": "120 rub. per person",
+  "individualPrice": "Price negotiable",
+  "header": {
+    "title": "Kayaking on the rivers and lakes of Belarus"
+  },
+  "home": {
+    "services": "Our services"
+  },
+  "info": {
+    "allServices": "ALL SERVICES",
+    "loading": "Loading . . . Please wait!",
+    "description": "Route description",
+    "duration": "Duration",
+    "groupSize": "Group size",
+    "included": "Included",
+    "kayaks": "kayaks",
+    "lifeJackets": "life jackets",
+    "instruction": "briefing on safety and rules of conduct on the water, the basics of kayak control"
+  },
+  "footer": {
+    "info": "IP Vlasik G.G., UNP 192837466, registered by the Minsk administration"
+  }
+}

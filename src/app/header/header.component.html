@@ -1,0 +1,24 @@
+<div class="header-footer-container"
+     fxLayout="row wrap"
+     fxLayoutGap="40px">
+
+  <div fxFlex="80" fxFlexOffset="10">
+    <h3 class="center">{{'header.title' | translate}}</h3>
+    <address class="center">
+      <i class="fa fa-phone"></i>: +375 25 740 86 67&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-phone"></i>: +375 29 566 46 84&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-envelope"></i>: kayak@gmail.com
+      <br><br>
+    </address>
+  </div>
+
+  <div fxFlex>
+    <button style="margin-top: 10px" mat-button (click)="setRussianLanguage()">
+      <span><img class="image" src="../../assets/images/ru.png" height=30 width=40 alt="ru"></span>
+    </button>
+    <button mat-button (click)="setEnglishLanguage()">
+      <span><img class="image" src="../../assets/images/en.png" height=30 width=40 alt="en"></span>
+    </button>
+  </div>
+
+</div>
