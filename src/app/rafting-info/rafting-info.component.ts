@@ -17,15 +17,16 @@ import {Image} from "../shared/image";
 export class RaftingInfoComponent implements OnInit {
 
   public rafting!: Rafting;
-  public raftingIds!: string[];
   public previousRaftingId!: string;
   public nextRaftingId!: string;
-  public previousImageId!: string;
-  public nextImageId!: string;
   public visibility = 'shown';
-  public raftingImages: Image[] = [];
-  public imagesIds!: string[];
-  public imageId: string = '1';
+  private raftingIds!: string[];
+  private nextImageId!: string;
+  private previousImageId!: string;
+  private raftingImages: Image[] = [];
+  private imagesIds!: string[];
+  private imageId: string = '1';
+  private interval!: number;
 
   constructor(public raftingService: RaftingService,
               private route: ActivatedRoute) {
@@ -33,6 +34,7 @@ export class RaftingInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.getRaftingInfo();
+    this.triggerNextImage();
   }
 
   public setNextImage(): void {
@@ -43,6 +45,16 @@ export class RaftingInfoComponent implements OnInit {
   public setPreviousImage(): void {
     this.imageId = this.previousImageId;
     this.setPreviousAndNextImage();
+  }
+
+  public triggerNextImage(): void {
+    this.interval = setInterval(() => {
+      this.setNextImage();
+    }, 2500);
+  }
+
+  public clearInterval(): void {
+    clearInterval(this.interval);
   }
 
   private getRaftingInfo(): void {

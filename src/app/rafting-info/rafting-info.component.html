@@ -27,7 +27,7 @@
           <span class="fa fa-angle-double-left fa-3x"></span>
         </button>
         <div fxFlex></div>
-        <button class="button-home" mat-button routerLink='/home'>{{'info.allServices' | translate}}</button>
+        <button (click)="clearInterval()" class="button-home" mat-button routerLink='/home'>{{'info.allServices' | translate}}</button>
         <div fxFlex></div>
         <button mat-button [routerLink]="['/rafting-info', nextRaftingId]">
           <span class="fa fa-angle-double-right fa-3x"></span>
