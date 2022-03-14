@@ -4,7 +4,6 @@ export const RAFTING_LIST: Rafting[] = [
   {
     id: '1',
     name: 'morningRafting',
-    mainImagePath: '/assets/images/1.jpg',
     image: [
       {
         id: '1',
@@ -35,7 +34,6 @@ export const RAFTING_LIST: Rafting[] = [
   {
     id: '2',
     name: 'eveningRafting',
-    mainImagePath: '/assets/images/6.jpg',
     image: [
       {
         id: '1',
@@ -66,7 +64,6 @@ export const RAFTING_LIST: Rafting[] = [
   {
     id: '3',
     name: 'fullDay',
-    mainImagePath: '/assets/images/11.jpg',
     image: [
       {
         id: '1',
@@ -89,7 +86,7 @@ export const RAFTING_LIST: Rafting[] = [
         path: '/assets/images/15.jpg',
       }
     ],
-    duration: '7-8 часов',
+    duration: 'fullDayDuration',
     group: 'groupSize10',
     price: 'price120',
     description: ''
@@ -97,7 +94,6 @@ export const RAFTING_LIST: Rafting[] = [
   {
     id: '4',
     name: 'individual',
-    mainImagePath: '/assets/images/16.jpg',
     image: [
       {
         id: '1',

@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {delay, map, Observable, of, Subscription} from "rxjs";
+import {delay, map, Observable, of} from "rxjs";
 import {Rafting} from "../shared/rafting";
 import {RAFTING_LIST} from "../shared/rafting-list";
 import {Image} from "../shared/image";
@@ -9,7 +9,7 @@ import {Image} from "../shared/image";
 })
 export class RaftingService {
 
-  public raftingImages: Image[] = [];
+  public currentImage!: Image;
 
   constructor() {
   }

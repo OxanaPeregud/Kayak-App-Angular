@@ -25,10 +25,9 @@ export class RaftingInfoComponent implements OnInit {
   public visibility = 'shown';
   public raftingImages: Image[] = [];
   public imagesIds!: string[];
-  public imageId!: string;
-  public currentImage!: Image;
+  public imageId: string = '1';
 
-  constructor(private raftingService: RaftingService,
+  constructor(public raftingService: RaftingService,
               private route: ActivatedRoute) {
   }
 
@@ -79,8 +78,6 @@ export class RaftingInfoComponent implements OnInit {
     const index: number = this.imagesIds?.indexOf(this.imageId);
     this.previousImageId = this.imagesIds[(this.imagesIds.length + index - 1) % this.imagesIds.length];
     this.nextImageId = this.imagesIds[(this.imagesIds.length + index + 1) % this.imagesIds.length];
-    this.imageId = this.nextImageId;
-    this.currentImage = this.raftingImages.filter(image => image.id == this.imageId)[0];
-    this.rafting.mainImagePath = this.currentImage.path;
+    this.raftingService.currentImage = this.raftingImages.filter(image => image.id == this.imageId)[0];
   }
 }
